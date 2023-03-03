@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-13</title>
+	<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		.container{
+		    width:100%;
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+		}
+		.left,.right{
+			margin:20px;
+			padding:20px;
+			height:40vh;
+			width:350px;
+			border:solid 2px #ccc;
+		}
+		iconify-icon{
+			font-size:22px;
+			margin-left:10px;
+		}
+		.rightin{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+		}
+		textarea{
+			border:1px soild #ccc;
+			height:60px;
+			width:100%;
+			padding:10px;
+		}
+		button{
+			width:100%;
+			background-color:#ccc;
+			color:#000;
+			font-size:18px;
+			font-weight:600;
+			border:0;
+			padding:10px;
+			margin-top:50px;
+		}
+		
+		.col-lg-6{
+			width:70%;
+			flex-wrap:wrap;
+		}
+		#post .rightin p{
+			color:#000;
+			font-size:20px;
+		}
+		.option{
+			width:30%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<form>
+			    <h4>Enter Your Details</h4>
+				<textarea name="name" id="name"></textarea><br>
+				<button id="submit">POST</button>
+			</form>
+		</div>
+		<div class="right">
+			<h3>Your post here</h3>
+			<div id="post">
+				
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
